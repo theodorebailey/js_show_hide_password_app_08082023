@@ -21,9 +21,11 @@
 
         eyecon.onclick = function(){
             if(pw.type == "password"){
-                pw.type == "text";
+                pw.type = "text";
+                eyecon.src = "eye-open.png";
             } else {
-                pw.type == "password";
+                pw.type = "password";
+                eyecon.src = "eye-close.png";
             }
         }
     </script>
