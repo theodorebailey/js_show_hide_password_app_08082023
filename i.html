@@ -9,22 +9,33 @@
 </head>
 <body>
 
+    <!-- input box -->
     <div class="input-box">
+        <!-- input box is a password container -->
         <input type="password" placeholder="password" id="password">
+        <!-- img is an open or closed eye to iterate between -->
         <img src="eye-close.png" alt="eye-closed" id="eyecon">
     </div>
 
 
     <script>
+        // select password box
         let pw = document.getElementById("password");
+        // select the icon
         let eyecon = document.getElementById("eyecon");
 
+        // set an onclick function to the eyecon
         eyecon.onclick = function(){
+            // if pw type is set to password
             if(pw.type == "password"){
+                // pw type == text
                 pw.type = "text";
+                // eyecon == open
                 eyecon.src = "eye-open.png";
             } else {
+                // else pw type == password
                 pw.type = "password";
+                // eye == closed
                 eyecon.src = "eye-close.png";
             }
         }
